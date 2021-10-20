@@ -9,17 +9,17 @@ class NfeSapiensWs:
 
     def obter_faturamento(self, data_inicio:str, data_final:str):
         return self._client.service.obterFaturamento(
-            user       = 'sidecomm',
-            password   = 'sidecomm',
+            user       = 'seu_usuario',
+            password   = 'sua_senha',
             encryption = '',
             parameters = {
                 'dataInicio' : data_inicio,
                 'dataFim'    : data_final } )
 
     
-    def gravar_notas_fiscais_saida(self, nfe_sapiens: NfeSapiens):
+    def gravar_notas_fiscais_saida(self, requisicao):
         return self._client.service.GravarNotasFiscaisSaida_12(
-            user       = 'sidecomm',
-            password   = 'sidecomm',
+            user       = 'seu_usuario',
+            password   = 'sua_senha',
             encryption = '',
-            parameters = nfe_sapiens.parametros_requisicao() )
+            parameters = requisicao )
