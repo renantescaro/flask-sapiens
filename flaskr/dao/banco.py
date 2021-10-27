@@ -1,6 +1,7 @@
 import cx_Oracle
 from flaskr.utils.config import Config
 
+
 class Banco:
     def __init__(self):
         self._ip       = Config.get('banco_ip')
