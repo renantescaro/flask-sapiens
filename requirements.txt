@@ -1,0 +1,4 @@
+Flask==1.1.2
+zeep==4.0.0
+cx-Oracle==8.1.0
+wheel==0.36.2
