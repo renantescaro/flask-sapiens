@@ -1,6 +1,7 @@
 import collections
 from flaskr.dao.banco import Banco
 
+
 class FaturamentoDao(Banco):
     def pedido_com_produtos_faturar_nfe(self, id_ped_sapiens:int):
         query = """ 
