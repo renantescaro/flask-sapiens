@@ -17,6 +17,6 @@ class Config:
             f.close()
 
 
-    def get(hash):
+    def get(hash:str):
         load_dotenv()
         return os.getenv(str(hash).upper())
