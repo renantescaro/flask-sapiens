@@ -17,35 +17,29 @@
 
 <br>
 
-### Executar aplicação em desenvolvimento
-* Windows
-* > set FLASK_APP=flaskr
-* > set FLASK_ENV=development
-* > set FLASK_RUN_HOST=192.168.1.182
-* > set FLASK_RUN_PORT=80
-* > flask run
+
+### Configurações
+* arquivo .env
 
 <br>
 
-* Linux
-* > export FLASK_APP=flaskr
-* > export FLASK_RUN_HOST=192.168.1.212
-* > export FLASK_RUN_PORT=5000
-* > flask run
+### Executar aplicação
+* > python3.7 run.py
 
 <br>
+<br>
 
-#### Publicar aplicação
+## Publicar aplicação
 * > python setup.py bdist_wheel
 #### Arquivo gerado
 * > dist/flaskr-1.0-py3-none-any.whl
 
-<br>
 
 #### Copiar projeto inteiro via SSH
-* > scp -r C:/Users/renan.tescaro/Desktop/flask/flask-sapiens/dist/ root@192.168.1.212:/home/apps/
+* > scp -r seu_diretorio_local usuario_servidor@ip_servidor:caminho_servidor
 #### Copiar arquivo via SSH
-* > scp -r C:/Users/renan.tescaro/Desktop/flask/flask-sapiens/dist/flaskr-1.0-py3-none-any.whl root@192.168.1.212:/home/apps/
+* > scp -r seu_diretorio_local/flask-sapiens/dist/flaskr-1.0-py3-none-any.whl usuario_servidor@ip_servidor:caminho_servidor
+* Exemplo: scp -r C:/Users/renan.tescaro/Desktop/flask/flask-sapiens/ root@192.168.1.212:/home/apps/
 
 <br>
 
