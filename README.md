@@ -1,4 +1,4 @@
-### Estrutura simples para teste com Webservice do Sapiens
+### Estrutura simples para teste com Banco de Dados e Webservice do Sapiens
 * Python 3.7.3
 * Flask 1.1.2
 
